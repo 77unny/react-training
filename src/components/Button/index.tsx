@@ -9,7 +9,7 @@ const ContainerStyled = styled.button`
 `;
 const Container = tw(ContainerStyled)`custom-button`;
 
-interface IButtonProps {
+export interface IButtonProps {
   label: string;
   onClick?: () => void;
 }
