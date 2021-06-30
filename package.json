@@ -69,5 +69,13 @@
     "postcss": "^8.3.5",
     "tailwind-styled-components": "^2.0.3",
     "tailwindcss": "^2.2.4"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/components/**/*.tsx",
+      "src/pages/**/*.tsx",
+      "src/routers/**/*.tsx",
+      "!src/components/**/*.stories.tsx"
+    ]
   }
 }
