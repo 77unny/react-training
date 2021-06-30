@@ -1,5 +1,6 @@
 import React from "react";
 import tw from "tailwind-styled-components";
+import Button from "./components/Button";
 
 const Heading = tw.h1`
     flex
@@ -26,6 +27,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <Button label="버튼" />
     </div>
   );
 }
