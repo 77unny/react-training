@@ -11,6 +11,8 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/styled-components": "^5.1.10",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -20,7 +22,8 @@
   },
   "scripts": {
     "tailwind": "tailwindcss -i ./src/styles/tailwind.css -o ./src/styles/styles.css",
-    "start": "yarn tailwind & react-scripts start",
+    "postcss": "postcss  ./src/styles/tailwind.css -o ./src/styles/styles.css",
+    "start": "yarn postcss & react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
